@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    image: jupyter/datascience-notebook:x86_64-python-3.11
+    volumes:
+      - ./notebooks:/home/jovyan
+    ports:
+      - "8888:8888"
